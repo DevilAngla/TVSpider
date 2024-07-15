@@ -14,10 +14,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ${{ secrets.GH_PATH}}
-          ref: 'main'
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN}}
-          path: master
 
       - name: Clone TVSpider Repository
         uses: actions/checkout@v3
