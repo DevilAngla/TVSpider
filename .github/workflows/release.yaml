@@ -13,10 +13,10 @@ jobs:
       - name: Clone Base Repository
         uses: actions/checkout@v3
         with:
-          repository: ${{ secrets.GE_PATH}}
+          repository: ${{ secrets.GH_PATH}}
           ref: 'main'
           fetch-depth: 0
-          token: ${{ secrets.GE_TOKEN}}
+          token: ${{ secrets.GH_TOKEN}}
           path: master
 
       - name: Clone TVSpider Repository
